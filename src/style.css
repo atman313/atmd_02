@@ -1,0 +1,39 @@
+/* ====================
+   Image Container
+   ==================== */
+
+
+.slick-slide  img{                      /* .slick-slide is a CSS class defined in react-slick for styling images */
+    touch-action: none;
+    border-radius: 30px;            
+    width: 95vw; 
+    height: calc(95vw * 0.5625);        /* Maintaining a 16:9 aspect ratio, take the viewport width * it by the ratio 9(height) / 16(width) */
+    max-height: 60vh;
+    max-width: calc(60vh * 1.78);       /* Take max-height, multipy by height / width */
+    margin: auto;
+}
+
+/* ====================
+    Navigation Dots
+   ==================== */
+.slick-dots li button:before {          /* Built in class for the dots */
+    color: #555B6E;
+    font-size: 20px;
+  }
+
+.slick-dots li.slick-active button:before {
+    color: #555B6E !important;
+    font-size: 20px;
+}
+
+/* ====================
+   Styles For Demo Only
+   ==================== */
+
+.tag{
+    text-align: center;
+}
+
+body{
+    background-color: #FAF9F9;
+}
